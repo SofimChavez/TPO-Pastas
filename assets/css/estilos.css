@@ -34,7 +34,7 @@ nav{
 height: 80px;
 }
 
-.nav.logo img{
+.nav .logo img{
 height: 100%;
 vertical-align: top;
 }
