@@ -1,12 +1,17 @@
-{
-    margin:0;
-    padding:0;
+*{
+    margin:1px;
+    padding:1px;
+    box-sizing: border-box;
 }
 
 body{
     font-family: 'Roboto',sans-serif;
 }
 
+h1{
+    font-weight: 400;
+    font-size: 50px;
+}
 /* Header */
 header::before{
     content: "";
@@ -25,6 +30,14 @@ nav{
     /* transition: ease-in-out 0.5s; */
 }
 
+.nav .logo{
+height: 80px;
+}
+
+.nav.logo img{
+height: 100%;
+vertical-align: top;
+}
 .nav{
     display: flex;
     justify-content: space-between;
@@ -36,8 +49,8 @@ nav{
 .enlaces.header{
     font-weight: 300;
 }
-.nav .enlaces.header{
-    color: darkgrey;
+.nav .enlaces-header a{
+    color: rgb(94, 92, 92);
     text-decoration: none;
     margin-left: 20px;
 }
