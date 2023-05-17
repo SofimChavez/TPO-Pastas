@@ -8,6 +8,12 @@ body{
     font-family: 'Roboto',sans-serif;
 }
 
+@media screen and (max-width: 1920px){
+    /* 
+    iPad Air 1 & 2	res(1920 x 1080)
+	ViewPort ( X:1920 x Y:1080 ) 
+    */
+}
 @media screen and (max-width: 768px){
     /* 
     iPad Air 1 & 2	res(1536 x 2048)
