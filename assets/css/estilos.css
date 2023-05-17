@@ -7,6 +7,20 @@
 body{
     font-family: 'Roboto',sans-serif;
 }
+
+@media screen and (max-width: 768px){
+    /* 
+    iPad Air 1 & 2	res(1536 x 2048)
+	ViewPort ( X:768 x Y:1024 ) 
+    */
+}
+@media screen and (max-width: 414px){
+    /* 
+    iPhone XR	res(828 x 1792)
+    ViewPort	( X:414 x Y:896 ) 
+    */
+}
+
 .contenedor{
     width: 100%;
 }
