@@ -8,24 +8,6 @@ body{
     font-family: 'Roboto',sans-serif;
 }
 
-@media screen and (max-width: 1920px){
-    /* 
-    iPad Air 1 & 2	res(1920 x 1080)
-	ViewPort ( X:1920 x Y:1080 ) 
-    */
-}
-@media screen and (max-width: 768px){
-    /* 
-    iPad Air 1 & 2	res(1536 x 2048)
-	ViewPort ( X:768 x Y:1024 ) 
-    */
-}
-@media screen and (max-width: 414px){
-    /* 
-    iPhone XR	res(828 x 1792)
-    ViewPort	( X:414 x Y:896 ) 
-    */
-}
 
 .contenedor{
     width: 100%;
@@ -157,4 +139,49 @@ footer{
     color: white;
     background-color: #59CE8F;
     border-color: #59CE8F;
+}
+
+
+@media screen and (max-width: 1920px){
+    /* 
+    Acer Nitro 5	res(1920 x 1080)
+	ViewPort ( X:1920 x Y:1080 ) 
+    */
+}
+@media screen and (max-width: 768px){
+    /* 
+    iPad Air 1 & 2	res(1536 x 2048)
+	ViewPort ( X:768 x Y:1024 ) 
+    */
+    h1{font-size: 45px;
+    font-weight: 300;}
+    footer{height: 500px;
+        justify-content: space-evenly;}
+    .partFooter{
+        width: 40%;
+        margin-bottom: 40px;
+    }
+    .partFooter img{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 550px){
+    /* 
+    iPhone XR	res(828 x 1792)
+    ViewPort	( X:550 x Y:896 ) 
+    */
+    h1{font-size: 40px;
+    font-weight: 100;}
+    .enlaces-header{
+        display: none;
+    }
+    .hamburguer{display: block;}
+    footer{height: 675px;}
+    .partFooter{
+        width: 95%;
+        margin-bottom: 40px;
+    }
+    .partFooter img{
+        width: 40%;
+    }
 }
