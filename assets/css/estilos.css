@@ -8,9 +8,17 @@ body{
     font-family: 'Roboto',sans-serif;
 }
 
+
+.contenedor{
+    width: 100%;
+}
 h1{
     font-weight: 400;
     font-size: 50px;
+}
+h4{
+    color: rgb(52, 51, 51);
+    font-weight: 300;
 }
 /* Header */
 header::before{
@@ -27,7 +35,7 @@ nav{
     position: fixed;
     top: 0;
     z-index: 100;
-    /* transition: ease-in-out 0.5s; */
+    transition: ease-in-out 0.5s;
 }
 
 .nav .logo{
@@ -35,7 +43,7 @@ height: 80px;
 }
 
 .nav .logo img{
-height: 100%;
+height: 98%;
 vertical-align: top;
 }
 .nav{
@@ -69,4 +77,111 @@ vertical-align: top;
     font-size: 25px;
     line-height: 80px;
 
+}
+
+footer{
+    background: rgb(238, 237, 237);
+    padding: 60px 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    height: 400px;
+}
+
+.partFooter{
+    width: 30%;
+    text-align: center;
+}
+
+.partFooter h4{
+    color: rgb(52, 51, 51);
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.partFooter a{
+    display: block;
+    text-decoration: none;
+    color: lightslategray;
+    font-weight: 300;
+    transition: color .3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.partFooter a:hover{
+    color: #59CE8F;
+}
+
+.partFooter img{
+    width: 50%;
+}
+
+.social-media i{
+    font-size: 20px;
+    display: inline-block;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 50%;
+    height: 38px;
+    width: 38px;
+    line-height: 36px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: all ease-in-out .3s;
+    margin-right: 5px;
+}
+
+.social-media i:hover{
+    color: white;
+    background-color: #59CE8F;
+    border-color: #59CE8F;
+}
+
+
+@media screen and (max-width: 1920px){
+    /* 
+    Acer Nitro 5	res(1920 x 1080)
+	ViewPort ( X:1920 x Y:1080 ) 
+    */
+}
+@media screen and (max-width: 768px){
+    /* 
+    iPad Air 1 & 2	res(1536 x 2048)
+	ViewPort ( X:768 x Y:1024 ) 
+    */
+    h1{font-size: 45px;
+    font-weight: 300;}
+    footer{height: 500px;
+        justify-content: space-evenly;}
+    .partFooter{
+        width: 40%;
+        margin-bottom: 40px;
+    }
+    .partFooter img{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 550px){
+    /* 
+    iPhone XR	res(828 x 1792)
+    ViewPort	( X:550 x Y:896 ) 
+    */
+    h1{font-size: 40px;
+    font-weight: 100;}
+    .enlaces-header{
+        display: none;
+    }
+    .hamburguer{display: block;}
+    footer{height: 675px;}
+    .partFooter{
+        width: 95%;
+        margin-bottom: 40px;
+    }
+    .partFooter img{
+        width: 40%;
+    }
 }
