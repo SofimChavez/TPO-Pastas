@@ -64,7 +64,7 @@ vertical-align: top;
     margin-right: 20px;
 }
 
-.hamburguer{
+.bars{
     width: 80px;
     height: 80px;
     display: none;
@@ -73,7 +73,7 @@ vertical-align: top;
     cursor: pointer;
 }
 
-.hamburguer>i{
+.bars>i{
     font-size: 25px;
     line-height: 80px;
 
@@ -95,6 +95,58 @@ vertical-align: top;
       height: 200px;
       object-fit: cover;
     }
+.contenido-header{
+    width: 90%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin: auto;
+}
+
+.contenido-header>img{
+    height: 500px;
+    animation: ease-in animat 2s;
+}
+
+@keyframes animat{
+    0%{
+        transform: scale(0);
+    }100%{
+        transform: scale(1);
+    }
+}
+
+.parr-history{
+    
+        font-family: "Arial", sans-serif;
+        font-size: 20px;
+        line-height: 1.5;
+        color: #333;
+        text-align: justify;
+        margin-right: 30%;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    font-weight: 400px;
+}
+.texto{
+    font-weight: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container img {
+    width: 25%;
+}
 
 footer{
     background: rgb(238, 237, 237);
@@ -200,18 +252,13 @@ footer{
         align-items: center;
         flex-direction: column;
         justify-content: space-evenly;
-        clip-path: circle(120% at 100% 0);
     }
 
-.nav .menudos{
-    -webkit-clip-path: circle(140% at 100% 0);
-    clip-path: circle(140% at 100% 0);
-}
 
 .nav .enlaces-header a{
     color: black;
 }
-    .hamburguer{display: block;}
+    .bars{display: block;}
     footer{height: 675px;}
     .partFooter{
         width: 95%;
