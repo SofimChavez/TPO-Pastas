@@ -44,14 +44,6 @@ nav{
     transition: ease-in-out 0.5s;
 }
 
-.nav .logo{
-height: 80px;
-}
-
-.nav .logo img{
-height: 98%;
-vertical-align: top;
-}
 .nav{
     display: flex;
     justify-content: space-between;
@@ -59,6 +51,15 @@ vertical-align: top;
     width: 100%;
     align-items: center;
 }
+
+.nav .logo{
+    height: 80px;
+    }
+    
+    .nav .logo img{
+    height: 98%;
+    vertical-align: top;
+    }
 
 .enlaces.header{
     font-weight: 300;
@@ -68,70 +69,6 @@ vertical-align: top;
     text-decoration: none;
     margin-left: 20px;
     margin-right: 20px;
-}
-
-.bars{
-    width: 80px;
-    height: 80px;
-    display: none;
-    text-align: center;
-    z-index: 100;
-    cursor: pointer;
-}
-
-.bars>i{
-    font-size: 25px;
-    line-height: 80px;
-
-}
-
-#gallery {
-    background-color: rgb(254, 213, 213);
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    
-    .image {
-      margin: 10px;
-    }
-    
-    .image img {
-      width: 300px;
-      height: 200px;
-      object-fit: cover;
-    }
-.contenido-header{
-    width: 90%;
-    height: 600px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    margin: auto;
-}
-
-.contenido-header>img{
-    height: 500px;
-    animation: ease-in animat 2s;
-}
-
-@keyframes animat{
-    0%{
-        transform: scale(0);
-    }100%{
-        transform: scale(1);
-    }
-}
-
-.parr-history{
-    
-        font-family: "Arial", sans-serif;
-        font-size: 20px;
-        line-height: 1.5;
-        color: #333;
-        text-align: justify;
-        margin-right: 30%;
 }
 
 .container {
@@ -157,6 +94,56 @@ vertical-align: top;
 .container img {
     width: 25%;
 }
+
+#gallery {
+    background-color: rgb(254, 213, 213);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .image {
+      margin: 10px;
+    }
+    
+    .image img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+    }
+.contenido-main{
+    width: 90%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin: auto;
+}
+
+.contenido-main>img{
+    height: 400px;
+    animation: ease-in animat 2s;
+}
+
+@keyframes animat{
+    0%{
+        transform: scale(0);
+    }100%{
+        transform: scale(1);
+    }
+}
+
+.parr-history{
+    
+        font-family: "Arial", sans-serif;
+        font-size: 20px;
+        line-height: 1.5;
+        color: #333;
+        text-align: justify;
+        margin-right: 30%;
+}
+
 
 footer{
     background: rgb(238, 237, 237);
@@ -227,13 +214,54 @@ footer{
 	ViewPort ( X:1920 x Y:1080 ) 
     */
 }
-@media screen and (max-width: 768px){
-    /* 
-    iPad Air 1 & 2	res(1536 x 2048)
-	ViewPort ( X:768 x Y:1024 ) 
-    */
+@media screen and (max-width: 1000px){
+  
     h1{font-size: 45px;
     font-weight: 300;}
+    
+    .nav .enlaces-header a{
+        margin-right: 15px;
+    }
+    .nav .logo{ height: 80px;}
+    
+    .nav .logo img{
+    height: 95%;
+    vertical-align: top;
+    }
+    .contenido-main{
+        width: 100%;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .contenido-main>img{
+        height: 300px;
+        animation: ease-in animat 2s;
+    }
+    
+    @keyframes animat{
+        0%{
+            transform: scale(0);
+        }100%{
+            transform: scale(1);
+        }
+    }
+    
+    .parr-history{
+        
+            font-family: "Arial", sans-serif;
+            font-size: 20px;
+            line-height: 1;
+            color: #333;
+            text-align: justify;
+            margin-right: 20px;
+        }
+    
     footer{height: 500px;
         justify-content: space-evenly;}
     .partFooter{
@@ -245,30 +273,70 @@ footer{
     }
 }
 @media screen and (max-width: 550px){
-    /* 
-    iPhone XR	res(828 x 1792)
-    ViewPort	( X:550 x Y:896 ) 
-    */
-    h1{font-size: 40px;
+    h1{font-size: 30px;
     font-weight: 100;}
     .enlaces-header{
-        position: fixed;
-        background: #B0EACD;
+        margin: 0%;
         top: 0;
         right: 0;
         width: 100%;
         height: 100vh;
         display: flex;
         align-items: center;
-        flex-direction: column;
+        font-weight: 400;
         justify-content: space-evenly;
     }
-
-
-.nav .enlaces-header a{
-    color: black;
-}
-    .bars{display: block;}
+    .nav .enlaces-header a{
+        color: black;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .nav .logo{ height: 70px;}
+    
+    .nav .logo img{
+    height: 90%;
+    vertical-align: top;
+    }
+    .contenido-main{
+        width: 100%;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .contenido-main>img{
+        height: 250px;
+        animation: ease-in animat 2s;
+        width: 80%;
+    }
+    
+    @keyframes animat{
+        0%{
+            transform: scale(0);
+        }100%{
+            transform: scale(1);
+        }
+    }
+    
+    .parr-history{
+        
+            font-family: "Arial", sans-serif;
+            font-size: 20px;
+            line-height: 1;
+            color: #333;
+            text-align: justify;
+            margin-right: 20px;
+        }
+        .image img {
+            width: 200px;
+            height: 100px;
+            object-fit: cover;
+          }    
+    
     footer{height: 675px;}
     .partFooter{
         width: 95%;
