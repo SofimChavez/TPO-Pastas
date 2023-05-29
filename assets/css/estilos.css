@@ -95,6 +95,19 @@ nav{
     width: 25%;
 }
 
+.restaurante{
+    justify-content: space-around;
+    margin: 5px;
+    background-color: #E8F9FD;
+    display: flex;
+    flex-wrap: wrap;
+}
+.restaurante img{
+    opacity: 1;
+    height: 600px;
+}
+
+
 #gallery {
     background-color: rgb(254, 213, 213);
       display: flex;
