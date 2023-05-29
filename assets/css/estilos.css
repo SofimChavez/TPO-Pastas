@@ -144,6 +144,11 @@ nav{
         margin-right: 30%;
 }
 
+.reservar{
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+}
 
 footer{
     background: rgb(238, 237, 237);
@@ -298,6 +303,15 @@ footer{
 @media screen and (max-width: 550px){
     h1{font-size: 30px;
     font-weight: 100;}
+    h2{
+        font-weight: 300;
+        font-size: 40px;
+        color: black;
+    }
+    h4{
+        color: rgb(52, 51, 51);
+        font-weight: 300;
+    }
     .enlaces-header{
         margin: 0%;
         top: 0;
@@ -384,7 +398,12 @@ footer{
             height: 100px;
             object-fit: cover;
           }    
-    
+     .reservar{
+         margin: auto;
+        padding: 10px;
+        font-size: 15px;
+    }
+
     footer{height: 675px;}
     .partFooter{
         width: 95%;

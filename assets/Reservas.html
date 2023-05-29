@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a1464f2232.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <script src="js/reservas.js"></script>
 </head>
 <body>
     <header>
@@ -30,42 +31,37 @@
         </nav>
     </header>
     <main>
+        <div class="reservar">
         <h2>Formulario de contacto</h2>
         <fieldset>
             <legend>RESERVAS</legend>
 
-            <form 
-            action=""
-            metthod="POST"
-            >
+            <form id="contactForm" onsubmit="return validateForm()">
             <div>
-                <label for="">Nombre</label>
-                <input type="text">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" required>
             </div>
             <div>
-                <label for="">Email</label>
-                <input type="email" name="" id="">
+                <label for="name">Apellido:</label>
+                <input type="text" id="name" required>
             </div>
             <div>
-                <label for="">Teléfono</label>
-                <input type="tel" name="" id="">
+                <label for="email">Email:</label>
+                <input type="email" id="email"required>
             </div>
             <div>
-                <label for="">Cantidad de comensales</label>
-                <input type="number" name="" id="">
+                <label for="cantidad">Comensales:</label>
+                <input type="number"  id="cantidad"required>
             </div>
             <div>
-                <label for="">Fecha</label>
-               <input type="date" name="" id="">
-            </div>
-            <div>
-                <label for="">Horario</label>
-                <input type="time" name="" id="">
+                <label for="message">Mensaje:</label>
+                    <textarea id="message" required></textarea>
             </div>
             <input type="submit" value="Enviar">
             <button type="reset">Vaciar</button>
         </form>
         </fieldset>
+    </div>
     </main>
     <footer>
         <div class="partFooter">
