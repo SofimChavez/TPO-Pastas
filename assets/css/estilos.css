@@ -296,7 +296,11 @@ footer{
             transform: scale(1);
         }
     }
-    
+    .restaurante img{
+        opacity: 1;
+        height: 400px;
+        overflow: hidden;
+    }
     .parr-history{
         
             font-family: "Arial", sans-serif;
@@ -418,6 +422,11 @@ footer{
          margin: auto;
          padding: 10px;
          font-size: 15px;
+    }
+
+    .restaurante img{
+        opacity: 1;
+        height: 200px;
     }
 
     footer{height: 675px;}
