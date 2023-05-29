@@ -150,6 +150,10 @@ nav{
     font-size: 20px;
 }
 
+.reservar div{
+    margin: 5px;
+}
+
 footer{
     background: rgb(238, 237, 237);
     padding: 60px 0;
@@ -385,23 +389,22 @@ footer{
     }
     
     .parr-history{
-        
             font-family: "Arial", sans-serif;
             font-size: 20px;
             line-height: 1;
             color: #333;
             text-align: justify;
             margin-right: 20px;
-        }
-        .image img {
-            width: 200px;
-            height: 100px;
-            object-fit: cover;
-          }    
-     .reservar{
+    }
+    .image img {
+        width: 200px;
+        height: 100px;
+        object-fit: cover;
+    }    
+    .reservar{
          margin: auto;
-        padding: 10px;
-        font-size: 15px;
+         padding: 10px;
+         font-size: 15px;
     }
 
     footer{height: 675px;}
