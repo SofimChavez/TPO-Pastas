@@ -1,8 +1,8 @@
-Restaurante italiano
+# Restaurante italiano
 
 Prototipo de una página web para un restaurante italiano especializado en pastas.
 
-Contiene:
+## Contiene:
 
 - 4 páginas html
 - Etiquetas semánticas para estructurar el sitio
@@ -14,8 +14,9 @@ Contiene:
 - El consumo de una API para ver diferentes tipos de platos.
 
 
-El proyecto fue realizado por:
-- Sofía Chávez
-- Alan Marcos Ennis
-- Damian Toledo
-- Abigail Vallejos
+### El proyecto fue realizado por:
+
+- Sofía Chávez: header y footer, styling general, pagina de "Inicio", formulario de reserva, consumo de Iframe, consumo de Flaticon, consumo iconos de FontAwesome, transiciones
+- Alan Marcos Ennis: consumo de api, creación de texto y animación "Nosotros"
+- Damian Toledo: formulario de reserva con validación mediante Javascript
+- Abigail Vallejos: styling formulario de contacto y consumo iconos de FontAwesome
