@@ -32,35 +32,53 @@
     </header>
     <main>
         <div class="reservar">
-        <h2>Formulario de contacto</h2>
-        <fieldset>
-            <legend>RESERVAS</legend>
-
-            <form id="contactForm" onsubmit="return validateForm()">
-            <div>
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" required>
+            <h2 class="contacto">Formulario de contacto</h2>
+            <div class="contact-wrapper">
+                <div class="contact-from">
+                        <h4>RESERVAS</h4>
+            
+                        <form id="contactForm" onsubmit="return validateForm()">
+                        <div>
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div>
+                            <label for="name">Apellido:</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div>
+                            <label for="celular">Celular:</label>
+                            <input type="tel" id="celular"required>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email"required>
+                        </div>
+                        <div>
+                            <label for="cantidad">Comensales:</label>
+                            <input type="number"  id="cantidad"required>
+                        </div>
+                        <div>
+                            <label for="fecha">Fecha:</label>
+                            <input type="date" id="fecha"required>
+                        </div>
+                        <div>
+                            <label for="horario">Horario:</label>
+                            <input type="time" id="horario"required>
+                        </div>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Vaciar</button>
+                    </form>
             </div>
-            <div>
-                <label for="name">Apellido:</label>
-                <input type="text" id="name" required>
+            <div class="contact-info">
+                <h4>Información</h4>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot" style="color: #FD5E53"></i> Avenida Belgrano 675</li>
+                    <li><i class="fa-solid fa-phone" style="color:#FD5E53"></i> 222-333-444</li>
+                    <li><i class="fa-solid fa-envelope" style="color: #FD5E53"></i> restaurante@italiano.com</li>
+                </ul>
             </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email"required>
-            </div>
-            <div>
-                <label for="cantidad">Comensales:</label>
-                <input type="number"  id="cantidad"required>
-            </div>
-            <div>
-                <label for="message">Mensaje:</label>
-                    <textarea id="message" required></textarea>
-            </div>
-            <input type="submit" value="Enviar">
-            <button type="reset">Vaciar</button>
-        </form>
-        </fieldset>
+        </div>
     </div>
     <div class="ubicacion">
         <h3>Ubicación</h3>

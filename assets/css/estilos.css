@@ -164,16 +164,50 @@ nav{
 
 .reservar{
     margin: auto;
-    padding: 10px;
+    padding: 40px;
     font-size: 20px;
 }
 
-.reservar div{
-    margin: 5px;
+
+.contacto{
+    color:#FD5E53;
+
+}
+
+button{
+    background: #FD5E53;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+}
+
+input{
+    display: flex;
+    margin: 4px;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    background: rgb(238, 237, 237);
+    outline: 0;
+    margin-bottom: 15px;
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 1em;
+}
+
+li{
+    list-style: none;
 }
 
 .ubicacion{
-    margin-left: 10px;
+    margin-left: 40px;
 }
 .ubicacion iframe{
     width: 75%;
@@ -182,7 +216,7 @@ nav{
     margin-right: 12.5%;
     margin-top: 2px;
     margin-bottom: 4px;
-    height: 500px;
+    height: 600px;
 }
 
 footer{
@@ -343,6 +377,50 @@ footer{
             margin-right: 20px;
     }
     
+    .reservar{
+        margin: auto;
+        padding: 30px;
+        font-size: 17px;
+    }
+    
+    .contacto{
+        color:#FD5E53;
+    
+    }
+    
+    button{
+        background: #FD5E53;
+        cursor: pointer;
+        border: none;
+        padding: 10px 20px;
+        color: aliceblue;
+        font-size: 15px;
+        font-weight: bold;
+        position: relative;
+    
+    }
+    
+    input{
+        display: flex;
+        margin: 1px;
+        width: 80%;
+        padding: 10px;
+        border: none;
+        background: rgb(238, 237, 237);
+        outline: 0;
+        margin-bottom: 10px;
+    
+    }
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        padding: 0.5em;
+    }
+    
+    .ubicacion{
+        margin-left: 30px;
+    }
+
     .ubicacion iframe{
         width: 75%;
         border: 1px solid black;
@@ -466,9 +544,46 @@ footer{
         object-fit: cover;
     }    
     .reservar{
-         margin: auto;
-         padding: 10px;
-         font-size: 15px;
+        margin: auto;
+        padding: 20px;
+        font-size: 15px;
+    }
+    
+    .contacto{
+        color:#FD5E53;
+    
+    }
+    
+    button{
+        background: #FD5E53;
+        cursor: pointer;
+        border: none;
+        padding: 8px 12px;
+        color: aliceblue;
+        font-size: 12px;
+        font-weight: bold;
+        position: relative;
+    
+    }
+    
+    input{
+        display: flex;
+        margin: 1px;
+        width: 90%;
+        padding: 1px;
+        border: none;
+        background: rgb(238, 237, 237);
+        outline: 0;
+        margin-bottom: 5px;
+    }
+    .contact-wrapper {
+        display: flex;
+        flex-direction:column;
+    }
+
+    .contact-info{
+        font-size: 15px;
+        margin: 10px;
     }
 
     .restaurante img{
@@ -476,11 +591,15 @@ footer{
         height: 200px;
     }
 
+.ubicacion{
+    margin-left: 20px;
+}
+
     .ubicacion iframe{
         width: 75%;
         border: 1px solid black;
-        margin-left: 12.5%;
-        margin-right: 12.5%;
+        margin-left: 10%;
+        margin-right: 10%;
         margin-top: 2px;
         margin-bottom: 4px;
         height: 300px;
