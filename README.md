@@ -13,6 +13,7 @@ Prototipo de una página web para un restaurante italiano especializado en pasta
 - Una estructura maquetada con Flexbox.
 - El consumo de una API para ver diferentes tipos de platos.
 
+API utilizada: https://api.unsplash.com/search/photos?query=${query}&client_id=${accessKey}
 
 ### El proyecto fue realizado por:
 
